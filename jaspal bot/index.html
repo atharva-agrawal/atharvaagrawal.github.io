@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JASPAL</title>
+    <script type="text/javascript">
+      window.ymConfig = {
+        bot: "x1645173562690",
+        payload: {
+          email: "suvaphat@jaspal.co.th",
+          code: "53746",
+          name: "Suvaphat Mokkhavesa",
+          nickname: "Tae",
+          position: "Store Manager",
+          depart: "100010",
+          dept_desc: "IT",
+          brand: "",
+          mobile: "0948514670",
+          ext_num: "2468",
+          shop_desc: "Jaspal khornkan",
+          shop_code: "J05",
+          ip_address: "172.16.23.46",
+          company: "JPS Fashions Vietnam",
+        },
+        host: "https://cloud.yellow.ai",
+      };
+      (function () {
+        var w = window,
+          ic = w.YellowMessenger;
+        if ("function" === typeof ic)
+          ic("reattach_activator"), ic("update", ymConfig);
+        else {
+          var d = document,
+            i = function () {
+              i.c(arguments);
+            };
+          function l() {
+            var e = d.createElement("script");
+            (e.type = "text/javascript"),
+              (e.async = !0),
+              (e.src =
+                "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js");
+            var t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t);
+          }
+          (i.q = []),
+            (i.c = function (e) {
+              i.q.push(e);
+            }),
+            (w.YellowMessenger = i),
+            w.attachEvent
+              ? w.attachEvent("onload", l)
+              : w.addEventListener("load", l, !1);
+        }
+      })();
+      console.log("Hi");
+      console.log(payload);
+    </script>
+  </head>
+  <body>
+    <h1>JASPAL</h1>
+  </body>
+</html>
